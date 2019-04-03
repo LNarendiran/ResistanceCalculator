@@ -1,0 +1,7 @@
+C:\Users\ndevarajan\Documents\Visual Studio 2015\Projects\ElectronicCodeCalculator\ElectronicCodeCalculator.Business\bin\Debug\ElectronicCodeCalculator.Business.dll
+C:\Users\ndevarajan\Documents\Visual Studio 2015\Projects\ElectronicCodeCalculator\ElectronicCodeCalculator.Business\bin\Debug\ElectronicCodeCalculator.Business.pdb
+C:\Users\ndevarajan\Documents\Visual Studio 2015\Projects\ElectronicCodeCalculator\ElectronicCodeCalculator.Business\bin\Debug\ElectronicCodeCalculator.Core.dll
+C:\Users\ndevarajan\Documents\Visual Studio 2015\Projects\ElectronicCodeCalculator\ElectronicCodeCalculator.Business\bin\Debug\ElectronicCodeCalculator.Core.pdb
+C:\Users\ndevarajan\Documents\Visual Studio 2015\Projects\ElectronicCodeCalculator\ElectronicCodeCalculator.Business\obj\Debug\ElectronicCodeCalculator.Business.csprojResolveAssemblyReference.cache
+C:\Users\ndevarajan\Documents\Visual Studio 2015\Projects\ElectronicCodeCalculator\ElectronicCodeCalculator.Business\obj\Debug\ElectronicCodeCalculator.Business.dll
+C:\Users\ndevarajan\Documents\Visual Studio 2015\Projects\ElectronicCodeCalculator\ElectronicCodeCalculator.Business\obj\Debug\ElectronicCodeCalculator.Business.pdb

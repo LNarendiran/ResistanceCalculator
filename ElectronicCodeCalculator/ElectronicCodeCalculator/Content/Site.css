@@ -1,0 +1,64 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/*Align select controls horizontally*/
+.drpClass {
+    display: flex;
+    flex-direction: inherit;
+    align-items: center;
+    justify-content: center;
+}
+
+    .drpClass div {
+        padding: 10px;
+    }
+
+/*Style results divison*/
+.resultClass {
+    text-align: center;
+    background: #e6e2e2;
+    margin: 0 auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: darkslategray;
+    display:flex;
+    justify-content:center;
+}
+
+.resultClass > div {
+   margin: 0px 10px;
+}
+
+.bandLabelText {
+    font-weight: 500;
+}
+
+.bandLabelValue{
+    display:block;
+    min-height: 25px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}

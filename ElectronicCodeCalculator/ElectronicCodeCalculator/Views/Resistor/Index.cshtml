@@ -1,0 +1,79 @@
+﻿@using ElectronicCodeCalculator.Core.Constants
+@model ElectronicCodeCalculator.Core.Models.Resistor
+
+@{
+    ViewBag.Title = "Resistance Calculator";
+}
+ 
+
+<div class="jumbotron">
+    <h1>Resistance Calculator</h1>
+    <p class="lead">The electronic color code is used to indicate the values or ratings of electronic components, very commonly for resistors.</p>
+    <p><a href="http://en.wikipedia.org/wiki/Electronic_color_code" class="btn btn-primary btn-lg">Know more &raquo;</a></p>
+</div>
+
+<div class="Container">
+    <!--Color Selectors-->
+    <div class="panel panel-default drpClass" >
+        <div>
+            @Html.Label("BandA", "First Band", htmlAttributes: new { @class = "bandLabelText" })    
+            @Html.DropDownList("FirstBand", new SelectList(ResistorConstants.SignificantMaster, "Value", "Color"), "Select ", htmlAttributes: new { @class = "form-control", id = "ddlFirstBand" })
+            <span class = "bandLabelValue">@Html.Label("BandAValue", " ", htmlAttributes: new { @class = "bandLabelValue", id="lblFirstBand" })  </span>         
+        </div>
+        <div>
+            @Html.Label("BandB", "Second Band", htmlAttributes: new { @class = "bandLabelText" })
+            @Html.DropDownList("SecondBand", new SelectList(ResistorConstants.SignificantMaster, "Value", "Color"), "Select ", htmlAttributes: new { @class = "form-control", id = "ddlSecondBand" })
+            @Html.Label("BandBValue", " ", htmlAttributes: new { @class = "bandLabelValue", id = "lblSecondBand" })
+        </div>
+        <div>
+            @Html.Label("BandC", "Multiplier", htmlAttributes: new { @class = "bandLabelText" })
+            @Html.DropDownList("ThirdBand", new SelectList(ResistorConstants.MultiplierMaster, "Exponent", "Color"), "Select ", htmlAttributes: new { @class = "form-control", id = "ddlThirdBand" })
+            @Html.Label("BandCValue", " ", htmlAttributes: new { @class = "bandLabelValue", id = "lblThirdBand" })
+        </div>
+        <div>
+            @Html.Label("BandD", "Tolerance(%)", htmlAttributes: new { @class = "bandLabelText" })
+            @Html.DropDownList("FourthBand", new SelectList(ResistorConstants.ToleranceMaster, "Value", "Color"), "Select ", htmlAttributes: new { @class = "form-control", id = "ddlFourthBand" })
+            @Html.Label("BanDAValue", " ", htmlAttributes: new { @class = "bandLabelValue", id = "lblFourthBand" })          
+        </div>
+        <div>
+            <input type="submit" value="Calculate Resistance" class="btn btn-primary" id="btnSubmit" />
+            <input type="submit" value="Reset" class="btn btn-primary" id="btnReset" />
+        </div>       
+    </div>
+
+
+    <div id="divError" class="alert alert-danger" role="alert">
+     
+    </div>
+    <div id="divResult" class="resultClass">
+        <!--Resistance Values-->
+        <div>
+            <div>
+                @Html.Label("lblMininumResistance", "Minimum Resistance")
+            </div>
+            <div>
+                @Html.TextBox("txtMinimumResistance", "0", htmlAttributes: new { @class = "form-control" }) Ohms
+            </div>
+        </div>
+        <div>
+            <div>
+                @Html.Label("lblNormalResistance", "Normal Resistance")
+            </div>
+            <div>
+                @Html.TextBox("txtNormalResistance", "0", htmlAttributes: new { @class = "form-control" }) Ohms
+            </div>
+        </div>
+        <div>
+            <div>
+                @Html.Label("lblMaximumResistance", "Maximum Resistance")
+            </div>
+            <div>
+                @Html.TextBox("txtMaximumResistance", "0", htmlAttributes: new { @class = "form-control" }) Ohms
+            </div>
+        </div>
+    </div>
+</div>
+@section Scripts{
+    <script src="~/Scripts/ResistanceCalculator.js"></script>
+    @Scripts.Render("~/bundles/jqueryval")
+}
